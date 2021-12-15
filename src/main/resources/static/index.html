@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello chat !!!</title>
+    <script src="/webjars/jquery/dist/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="js.js"></script>
+</head>
+<body> <!-- if you write onload="connect()" , call connection method as soon as the page is loaded -->
+
+
+<div>
+     <div>
+       <label>What is your username?</label>
+       <input id="username" type="text" placeholder="from user"/>
+       <button id="connect" type="submit">Connect</button>
+     </div>
+
+
+    <br/>
+
+    <from>
+        <div>
+            <label>User will received message</label>
+            <input type="text" id="name" placeholder="User will receive the message..."> <br/>
+            <label>Your message: </label>
+            <input id="text" type="text" placeholder="your message"/>
+        </div>
+        <button id="send" type="submit" >Send</button>
+    </from>
+
+    <p id="response"></p>  <!-- Print message from user-->
+    <label>Message from someone: </label><span id="message"></span>
+</div>
+
+</body>
+</html>
